@@ -49,3 +49,10 @@ I tested the application in the simulator for all devices, but only on a real Ve
 I can't guarantee it looks well on other devices.
 
 Also I'm actually a python backend developer and consequently my JS and *making things look nice* experience is very limited.
+
+License
+=======
+
+Logo is taken from: https://de.wikipedia.org/wiki/Datei:Wikipedia_svg_logo.svg
+Logo and brand "Wikipedia" are protected with the creative commons license: 
+https://creativecommons.org/licenses/by/2.0/

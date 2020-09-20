@@ -53,6 +53,6 @@ Also I'm actually a python backend developer and consequently my JS and *making 
 License
 =======
 
-Logo is taken from: https://de.wikipedia.org/wiki/Datei:Wikipedia_svg_logo.svg
+Logo is taken from: https://de.wikipedia.org/wiki/Datei:Wikipedia_svg_logo.svg.
 Logo and brand "Wikipedia" are protected with the creative commons license: 
 https://creativecommons.org/licenses/by/2.0/

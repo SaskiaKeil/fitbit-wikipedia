@@ -1,0 +1,20 @@
+<svg class="background">
+  <use href="#panoramaview">
+    <!-- Create 5 articles -->
+    <use href="#article" id="article_1"/>
+    <use href="#article" id="article_2"/>
+    <use href="#article" id="article_3"/>
+    <use href="#article" id="article_4"/>
+    <use href="#article" id="article_5"/>
+
+    <!-- Create 5 pagination dots -->
+    <use id="pagination-dots" href="#pagination-widget" y="5">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
+  </use>
+</svg>

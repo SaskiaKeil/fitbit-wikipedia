@@ -1,0 +1,23 @@
+<svg>
+  <defs>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="import" href="/mnt/sysassets/widgets_common.gui" />
+    <link rel="import" href="/mnt/sysassets/widgets/baseview_widget.gui" />
+    <!-- Vertical scrolling -->
+    <link rel="import" href="/mnt/sysassets/widgets/scrollview_widget.gui" />
+    <!-- Horizontal scrolling -->
+    <link rel="import" href="/mnt/sysassets/widgets/panoramaview_widget.gui" />
+    <link rel="import" href="/mnt/sysassets/widgets/pagination_dots.gui" />
+    <!-- Article -->
+    <symbol id="article">
+      <use href="#panoramaview-item">
+        <use href="#scrollview" >
+          <use href="#scrollview-item">
+            <text class="text title" />
+            <textarea class="text extract" />
+          </use>
+        </use>
+      </use>
+    </symbol>
+  </defs>
+</svg>

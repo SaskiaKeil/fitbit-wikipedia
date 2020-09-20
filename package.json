@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "^4.2.1"
+  },
+  "fitbit": {
+    "appUUID": "58693936-da0b-4d6a-8d59-dc6b3f6d1fff",
+    "appType": "app",
+    "appDisplayName": "Wikipedia",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_location",
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Wikipedia"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "dependencies": {
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}

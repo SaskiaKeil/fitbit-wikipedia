@@ -1,0 +1,34 @@
+.background {
+  viewport-fill: fb-black;
+}
+
+.text {
+  fill: white;
+  font-size: 25;
+  font-family: System-Regular;
+  font-weight: bold;
+}
+
+.title {
+  text-length: 100;
+  font-size: 30;
+  /* Put the title below the panorama points */
+  x: 2;
+  y: 45;
+}
+
+.extract {
+  /* Set to high values to make space for the text, which is later added via JS */
+  text-length: 10000;
+  /* Keep distance from the right so text is properly displayed */
+  width: 97%;
+  /* Put the extract below the title */
+  x: 2;
+  y: 60;
+}
+
+.scrollview-item {
+  height: 500%;
+}
+
+

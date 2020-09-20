@@ -3,7 +3,7 @@ Fitbit Wikipedia
 ================
 
 Fitbit Wikipedia is a small app for your fitbit device to retrieve articles close to your current location. It fetches the 5 closest articles and puts their title and extract to the watch.
-You can scroll through the articles by swiping to the left and the right.
+You can scroll through the articles by swiping left and right.
 
 .. image:: static/fitbit-wikipedia.png
 

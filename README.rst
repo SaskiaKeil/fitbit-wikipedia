@@ -8,6 +8,8 @@ You can scroll through the articles by swiping left and right.
 .. image:: static/fitbit-wikipedia.png
 
 Furthermore you can change the language of the articles in the settings on your phone.
+You can install the app directly from the store:
+https://gallery.fitbit.com/details/58693936-da0b-4d6a-8d59-dc6b3f6d1fff
 
 Known limitations
 =================

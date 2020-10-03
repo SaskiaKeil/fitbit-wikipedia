@@ -7,7 +7,7 @@ import * as messaging from "messaging";
 // Listen for the onmessage event
 messaging.peerSocket.onmessage = function(evt) {
 
-  // Find correct tab to put article on
+  // Find correct tab to put article in
   var index = evt.data.index;
 
   var article = document.getElementById("article_" + index);
@@ -23,3 +23,9 @@ messaging.peerSocket.onmessage = function(evt) {
 messaging.peerSocket.onerror = function(err) {
   console.log(err);
 }
+
+// Listen for the onopen event and trigger the companion to wake up
+messaging.peerSocket.onopen = function() {
+  messaging.peerSocket.send("Hi!");
+}
+

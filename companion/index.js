@@ -6,7 +6,7 @@ function locationError(error) {
   console.log("Error: " + error.code, "Message: " + error.message);
 }
 
-// Listen for the onopen event, get location and then get
+// Listen for the onopen event, get location and then get related articles
 messaging.peerSocket.onopen = function() {
   geolocation.getCurrentPosition(getNearbyArticles, locationError, {
     timeout: 60 * 1000
@@ -37,7 +37,13 @@ function getNearbyArticles(position) {
               'title': page['title'],
               'extract': page['extract']
             };
-            messaging.peerSocket.send(responseDict);
+            if (messaging.peerSocket.readyState == messaging.peerSocket.OPEN) {
+                messaging.peerSocket.send(responseDict);
+                console.log("Send message");
+            } else {
+                console.error('PeerSocket not open');
+            }
+
             index++;
           }
       })

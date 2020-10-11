@@ -39,7 +39,6 @@ function getNearbyArticles(position) {
             };
             if (messaging.peerSocket.readyState == messaging.peerSocket.OPEN) {
                 messaging.peerSocket.send(responseDict);
-                console.log("Send message");
             } else {
                 console.error('PeerSocket not open');
             }
@@ -73,7 +72,7 @@ function getURL(position, language) {
       generator: "geosearch",
       prop: "extracts",
       ggscoord: position.coords.latitude  + "|" + position.coords.longitude,
-      ggsradius: "1000",
+      ggsradius: "5000",
       ggslimit: "5",
       format: "json",
       exintro: 1,

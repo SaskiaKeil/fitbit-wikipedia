@@ -20,9 +20,11 @@ This is the first version of this application and it comes with some shortcoming
   I didn't find a good way yet as only a limited version of CSS is available
 * The wikipedia API is requested with a parameter to limit the amount of sentences.
   The sentence parsing is not very advanced though and labels everything ended by a dot as a sentence.
-  Also if it's semantically not a sentence, but. e.g. part of a date (01.01.2020). 
+  Also if it's semantically not a sentence, but. e.g. part of a date (01.01.2020).
   This can lead to interesting texts displayed.
   For now I'm not sure yet how to deal with that as I have to limit the content somehow due to a limited message size between watch and companion app.
+
+Also make sure that the fitbit app has access to your location - even if it runs in the background.On Android: Applications -> Fitbit -> Permissions -> Location -> Always allowed
 
 Building
 ========

@@ -10,6 +10,8 @@
 }
 
 .title {
+  /*title color to differentiate it form extract */
+  fill: "fb-cyan";
   text-length: 100;
   font-size: 30;
   /* Put the title below the panorama points */
@@ -24,7 +26,8 @@
   width: 97%;
   /* Put the extract below the title */
   x: 2;
-  y: 60;
+/*   y: 60; */ 
+    y: $+15;
 }
 
 .scrollview-item {

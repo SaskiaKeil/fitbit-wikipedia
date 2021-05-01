@@ -10,7 +10,7 @@
 }
 
 .title {
-  /*title color to differentiate it form extract */
+  /* title color to differentiate it from extract */
   fill: "fb-cyan";
   text-length: 100;
   font-size: 30;
@@ -26,8 +26,7 @@
   width: 97%;
   /* Put the extract below the title */
   x: 2;
-/*   y: 60; */ 
-    y: $+15;
+  y: $+15;
 }
 
 .scrollview-item {

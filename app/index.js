@@ -6,14 +6,14 @@ import * as messaging from "messaging";
 
 
 function initialize() {
-    //Set default screen with some meesage and instruction ( something better than nothing)
+  // Set launch screen with instructions on how to use the app
   var index = 1;
   var article = document.getElementById("article_" + index);
   var extract = article.getElementsByClassName("extract")[0];
   var title = article.getElementsByClassName("title")[0];
-  
-  title.text = "Loading now .... ";
-  extract.text = "Getting latest data for you ⌛ \n\nMake sure your Internet is On ✔ \nand \nLocation access is granted to fitbit app on phone ⚙.";
+
+  title.text = "Loading now...";
+  extract.text = "Getting data for you ⌛ \nMake sure your internet is on and location access is granted to fitbit app on phone ⚙";
 }
 // Listen for the onmessage event
 messaging.peerSocket.onmessage = function(evt) {

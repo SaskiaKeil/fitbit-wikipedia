@@ -6,8 +6,7 @@ Fitbit Wikipedia is a small app for your fitbit device to retrieve articles clos
 You can scroll through the articles by swiping left and right.
 
 .. image:: static/fitbit-wikipedia.png
-=================
-.. image:: static/fitbit-wikipedia_on_watch.png
+.. image:: static/fitbit-wikipedia-on-watch.png
 
 Furthermore you can change the language of the articles in the settings on your phone.
 You can install the app directly from the store:

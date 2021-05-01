@@ -54,7 +54,7 @@ function getLanguageFromSettings() {
 
   const languageSetting = JSON.parse(settingsStorage.getItem("language"));
 
-  // If no langauge is set put English as default, otherwise parse it from the settings
+  // If no language is set put English as default, otherwise parse it from the settings
   var language = languageSetting == null ? 'en' : languageSetting["values"][0]["value"];
 
   return language;

@@ -73,7 +73,7 @@ function getURL(position, language) {
       prop: "extracts",
       ggscoord: position.coords.latitude  + "|" + position.coords.longitude,
       ggsradius: "5000",
-      ggslimit: "5",
+      ggslimit: "10",
       format: "json",
       exintro: 1,
       // Only get 5 sentences, as the message size in companion->app is anyways limited

@@ -14,6 +14,17 @@ function initialize() {
 
   title.text = "Loading now...";
   extract.text = "Getting data for you ⌛ \nMake sure your internet is on and location access is granted to fitbit app on phone ⚙";
+
+  // Initialize all pages so there's content in case we can not load enough articles
+  for (var index=2; index <= 10; index++ ) {
+    var article = document.getElementById("article_" + index);
+    var extract = article.getElementsByClassName("extract")[0];
+    var title = article.getElementsByClassName("title")[0];
+    title.text = "No data available";
+    extract.text = "Probably there are no other articles available in 5km distance of your location.";
+  }
+
+
 }
 // Listen for the onmessage event
 messaging.peerSocket.onmessage = function(evt) {

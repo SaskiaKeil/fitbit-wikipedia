@@ -63,7 +63,7 @@ https://www.mediawiki.org/wiki/API:Main_page
 Disclaimer
 ==========
 
-I tested the application in the simulator for all devices, but only on a real Versa 2 device.
+I tested the application in the simulator for all devices, but only own a real Versa 2 device.
 I can't guarantee it looks well on other devices.
 
 Also I'm actually a python backend developer and consequently my JS and *making things look nice* experience is very limited.

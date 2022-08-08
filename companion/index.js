@@ -27,6 +27,16 @@ function getNearbyArticles(position) {
           return response.json();
       })
       .then(function(response) {
+          // If no articles are found return with the content for the first tab
+          if ((response.hasOwnProperty("query") === false) || (response.query.hasOwnProperty("pages") === false)) {
+            var responseDict = {
+              'index': 1,
+              'title': 'No data available.',
+              'extract': 'Probably there are no other articles available in 5km distance of your location.'
+            };
+            messaging.peerSocket.send(responseDict);
+          }
+
           // Iterate over list to build list of articles with relevant fields
           // Only pick necessary fields in order to minimize the message size
           var index = 1;
@@ -35,7 +45,9 @@ function getNearbyArticles(position) {
             var responseDict = {
               'index': index,
               'title': page['title'],
-              'extract': page['extract']
+              // In total our message can only have 1027 bytes, so we slice it down and leave some space for index and title
+              // Reference: https://dev.fitbit.com/build/guides/communications/messaging/#maximum-message-size
+              'extract': page['extract'].slice(0, 900)
             };
             if (messaging.peerSocket.readyState == messaging.peerSocket.OPEN) {
                 messaging.peerSocket.send(responseDict);
